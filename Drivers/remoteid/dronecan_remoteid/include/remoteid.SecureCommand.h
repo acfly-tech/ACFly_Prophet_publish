@@ -1,0 +1,11 @@
+#pragma once
+#include <remoteid.SecureCommand_req.h>
+#include <remoteid.SecureCommand_res.h>
+
+#define REMOTEID_SECURECOMMAND_ID 64
+#define REMOTEID_SECURECOMMAND_SIGNATURE (0x2035E2EAE81D2E53ULL)
+
+#if defined(__cplusplus) && defined(DRONECAN_CXX_WRAPPERS)
+#include <canard/cxx_wrappers.h>
+SERVICE_MESSAGE_CXX_IFACE(remoteid_SecureCommand, REMOTEID_SECURECOMMAND_ID, REMOTEID_SECURECOMMAND_SIGNATURE, REMOTEID_SECURECOMMAND_REQUEST_MAX_SIZE, REMOTEID_SECURECOMMAND_RESPONSE_MAX_SIZE);
+#endif

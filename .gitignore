@@ -1,0 +1,45 @@
+# Keil build output
+Objects/*
+Listings/
+RTE/
+EventRecorderStub.scvd
+!Objects/ACFly_Prophet.sct
+!Objects/
+
+# Keil temp files
+*.bak
+*.dep
+*.plg
+*.o
+*.d
+*.crf
+*.iex
+*.map
+*.lst
+*.htm
+
+# Main project machine-specific
+ACFly.uvoptx
+ACFly.uvguix.*
+ACFly.uvprojx.*
+
+# RID lib sub-project machine-specific
+remoteid_lib.uvoptx
+remoteid_lib.uvguix.*
+DebugConfig/remoteid_lib_*
+
+# Build logs
+uv4.log
+build_log.txt
+
+# Packaging output (developer-only)
+代码公开发布之前的必须操作/ACFly_Prophet_*.zip
+代码公开发布之前的必须操作/ACFly_Prophet_*/
+
+# Other
+.vscode/
+Readme/
+Firmware/
+**/.vs/
+.venv/
+DebugConfig/Target_1_STM32H743VITx_1.1.1.dbgconf
